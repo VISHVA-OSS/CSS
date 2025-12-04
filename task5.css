@@ -104,6 +104,7 @@ a{
 
 .carousel input {
   display: none;
+  display: block;
 }
 
 /* Slides container */
