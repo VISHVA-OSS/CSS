@@ -1,0 +1,18 @@
+ h1{
+        background-color: black;
+        color: aliceblue;
+    }
+    .content{
+        background-color: blue;
+        color: yellow;
+    }
+    .idname{
+        color: brown;
+    }
+    .ft{
+        font-size: 24px;
+    }
+
+    .btns{
+        background-color: red;
+    }

@@ -1,0 +1,114 @@
+ body{
+            margin: 0;
+            font-size: 18px;
+        }
+        .heading{
+            background-color: rgb(249, 249, 249);
+            text-align: center;
+            color: black;
+            padding: 20px;
+            text-transform: bold;
+        }
+        .par{
+            background: url(./../images/web.jpg)no-repeat center/cover;
+            height: 200px;
+            text-align: center;
+            color: black;
+            padding: 20px;
+        }
+        .section{
+            display: flex;
+            background-color: rgb(117, 238, 207);
+            padding: 20px;
+            gap: 20px;
+        }
+        .row{
+            flex: 1;
+            background-color: antiquewhite;
+            background: url(./../images/nature.jpg)no-repeat center/cover;
+            height: 300px;
+            min-width: 200px;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+        }
+        .row1{
+            flex: 1;
+            background-color: antiquewhite;
+            background: url(./../images/buterfly.jpg)no-repeat center/cover;
+            height: 300px;
+            min-width: 200px;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+        }
+        .row2{
+            flex: 1;
+            background-color: antiquewhite;
+            background: url(./../images/adventer.jpg)no-repeat center/cover;
+            height: 300px;
+            min-width: 200px;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+        }
+        .row3{
+            flex: 1;
+            background-color: antiquewhite;
+            background: url(./../images/hills.jpg)no-repeat center/cover;
+            height: 300px;
+            min-width: 200px;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+        }
+        .view{
+            text-align: center;
+            font-size: 18px;
+            margin: 10px;
+            color:yellow;
+        }
+
+        @media(max-width:1025px) and (min-width:768px){
+            .section{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                gap: 20px;
+            }
+        }
+        .view::after{
+            content: "(2 x 2 grid)";
+            display: block;
+            color: blue;
+        }
+        @media(max-width:768px){
+            .heading{
+                padding: 15px;
+                font-size: 18px;
+                text-align: left;
+            }
+            .section{
+                display: grid;
+                flex-direction: column;
+            }
+            .row{
+                font-size: 16px;
+                padding: 15px;
+            }
+            .view::after{
+                content: "(single column)";
+                display: block;
+                color: brown;
+            }
+        }
+        @media(min-width:1026px){
+            .section{
+                display: flex;
+                flex-wrap: nowrap;
+            }
+            .view::after{
+                content: "(single row)";
+                display: block;
+                color: greenyellow;
+            }
+        }

@@ -1,0 +1,77 @@
+
+.col1{
+    height: 300px;
+    background: url(./../images/task1.jpg) no-repeat center/cover
+}
+.col2{
+    height: 300px;
+    background: url(./../images/task2.jpg) no-repeat center/cover
+}
+.col3{
+    height: 300px;
+    background: url(./../images/task3.jpg) no-repeat center/cover
+}
+.col4{
+    height: 300px;
+    background: url(./../images/task4.jpg) no-repeat center/cover
+}
+
+body{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333333;
+        }
+        ul li{
+            float: left;
+        }
+        ul li a{
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        ul li a:hover{
+            background-color: #ea1010;
+        }
+
+.servicebtn{
+    background-color: #4caf50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.service-content{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px;
+}
+.service-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.service-content a:hover{
+    background-color: #f1f1f1;
+}
+.service:hover .service-content{
+    display: block;
+}
+.section{
+    width: 100%;
+    height: 300px;
+    background-color: #333333;
+    margin-top: 3px;
+}
